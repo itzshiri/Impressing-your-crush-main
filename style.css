@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c075b7;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 700px;
+    margin: 40px;
+  }
+  
+  .container .tenor-gif-embed {
+    max-width: 200px;
+  }
+  
+  .container .btn {
+    display: flex;
+    gap: 25px;
+  }
+
+  .btn a {
+    text-decoration: none;
+    color: #e30808;
+    background: #fff;
+    padding: 10px 25px;
+    border-radius: 8px;
+    box-shadow: 0.5rem 1rem 3rem hsla(0, 25%, 83%, 0.3);
+  }
+
+  /* Body Styling */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #e766d8; /* Light pink background */
+  overflow: hidden; /* Prevent scrolling */
+}
+
+/* Floating Hearts Animation */
+.heart-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* Push hearts to the background */
+}
+
+.heart {
+  position: absolute;
+  width: 70px; /* Size of the heart */
+  height: 100px;
+  background-color: red;
+  clip-path: polygon(0 0,100% 0,100% 41%,50% 91%,0 41%);
+  animation: float 6s infinite ease-in-out;
+  opacity: 0.8;
+}
+
+/* Random positions and animations for each heart */
+.heart:nth-child(1) {
+  top: 80%;
+  left: 10%;
+  animation-duration: 5s;
+  animation-delay: 0s;
+}
+
+.heart:nth-child(2) {
+  top: 60%;
+  left: 50%;
+  animation-duration: 7s;
+  animation-delay: 1s;
+}
+
+.heart:nth-child(3) {
+  top: 90%;
+  left: 70%;
+  animation-duration: 6s;
+  animation-delay: 0.5s;
+}
+
+.heart:nth-child(4) {
+  top: 50%;
+  left: 20%;
+  animation-duration: 8s;
+  animation-delay: 2s;
+}
+
+.heart:nth-child(5) {
+  top: 30%;
+  left: 80%;
+  animation-duration: 9s;
+  animation-delay: 1.5s;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0% {
+    transform: translateY(100vh) translateX(0);
+  }
+  100% {
+    transform: translateY(-100vh) translateX(30px);
+  }
+}
